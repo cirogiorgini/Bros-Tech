@@ -1,0 +1,195 @@
+@import url('https://fonts.googleapis.com/css2?family=REM:wght@300&family=Rubik:ital@1&display=swap');
+
+@keyframes SlideInLeft {
+    from{
+        transform: translateX(-300px);
+    }
+
+    to{
+        transform: translateX(0px);
+    }
+
+}
+
+@keyframes SlideInRight {
+    from{
+        transform: translateX(300px);
+    }
+
+    to{
+        transform: translateX(0px);
+    }
+
+}
+
+
+@keyframes SlideInUp{
+    from{
+        transform: translateY(300px);
+    }
+
+    to{
+        transform: translateY(0);
+    }
+}
+
+*{
+    padding: 0  ;
+    margin: 0   ;
+    box-sizing: border-box;
+}
+
+
+.header__up{
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    background-color: #221b1b;
+    padding: 1rem 2rem 1rem 2rem;
+}
+
+.header__up__left img{
+    width: 100%
+    
+}
+
+
+.header__up__right{
+    display: flex;
+    flex-direction: column;
+}
+
+.links{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem  ;
+    list-style: none;
+}
+
+.Home:hover{
+    transform: translateY(-5px);
+    transition-duration: 0.3s;
+    
+}
+
+.productos:hover{
+    transform: translateY(-5px);
+    transition-duration: 0.3s;
+    
+}
+
+.sobrenosotros:hover{
+    transform: translateY(-5px);
+    transition-duration: 0.3s;
+    
+}
+
+.contactanos:hover{
+    transform: translateY(-5px);
+    transition-duration: 0.3s;
+    
+}
+
+.links a{
+    color: white;
+    text-decoration: none;
+    font-family: 'Rubik', sans-serif;
+}
+
+.hero{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    animation-name: SlideInLeft;
+    animation-duration: 1s;
+
+}
+
+.hero img{
+    width: 46.8rem;
+}
+
+.hero__left{
+    justify-content: center;
+    align-items: center;
+    font-family: 'REM', sans-serif;
+    padding-left: 4rem;
+}
+
+.top__items{
+    background-color: #221b1b;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.top__items__text{
+    text-align: center;
+    padding-top: 2rem;
+}
+
+.top__items__text h3{
+    font-family: 'REM', sans-serif;
+}
+
+
+.top__items__text h3{
+    font-size: 2rem;
+}
+
+.top__items__tarjetas{
+    display: flex;
+    padding: 3rem 1rem 3rem 1rem;
+    gap: 1rem;
+    animation-name: SlideInRight;
+    animation-duration: 1s;
+}
+
+.top__items__tarjeta img{
+    width: 100%;
+}
+
+.top__items__tarjeta{
+    text-align: center;
+    
+}
+
+.card{
+    align-items: center;
+    margin: 1.5rem;
+}
+
+.card img{
+    width: 100%;
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+    
+}
+
+
+.iphone14{
+    animation-name: SlideInLeft;
+    animation-duration: 1s;
+}
+
+.asus{
+    animation-name: SlideInRight;
+    animation-duration: 1s;
+}
+
+.applewatch{
+    animation-name: SlideInLeft;
+    animation-duration: 1s;
+}
+
+.hyperx{
+    animation-name: SlideInRight;
+    animation-duration: 1s;
+}
+
+.nintendo{
+    animation-name: SlideInUp;
+    animation-duration: 1s;
+}
