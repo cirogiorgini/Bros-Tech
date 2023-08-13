@@ -44,12 +44,15 @@
     color: white;
     display: flex;
     justify-content: space-between;
-    background-color: #221b1b;
+    background-color: black;
     padding: 1rem 2rem 1rem 2rem;
+    align-items: center;
 }
 
 .header__up__left img{
-    width: 100%
+    width: 100%;
+    height: 90px;
+    padding: 0.5rem;
     
 }
 
@@ -118,7 +121,7 @@
 }
 
 .top__items{
-    background-color: #221b1b;
+    background-color: black;
     color: white;
     display: flex;
     flex-direction: column;
@@ -192,4 +195,67 @@
 .nintendo{
     animation-name: SlideInUp;
     animation-duration: 1s;
+}
+
+.footer{
+    height: 100px   ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    
+    
+}
+
+.iconos a{
+    color: grey;
+    margin: 0.5rem;
+    font-size: 1.5rem;
+    
+}
+
+
+.iconos img{
+    width: 100%;
+
+}
+
+
+.grid{
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+    height: 700px;
+    gap: 1.5rem;
+    padding-bottom: 3rem;
+}
+
+.grid-item1{
+    background-image: url('../img/grid-item\ 1jpg.jpg');
+    background-position: center center;
+}
+
+.grid-item2{
+    background-image: url('../img/grid-item2png.png');
+    background-size: cover;
+    background-position: center center;
+
+}
+
+.grid-item3{
+    background-image: url('../img/grid4.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+.grid-item4{
+    background-image: url('../img/Vision-Pro-Teknofilo-11-1.jpg');
+    background-size: cover;
+    background-position: center center;
+}
+
+.text--apple{
+    text-align: center;
+    margin: 3rem;
 }
