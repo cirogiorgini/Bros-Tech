@@ -1,0 +1,241 @@
+@import url('https://fonts.googleapis.com/css2?family=REM:wght@300&family=Rubik:ital@1&display=swap');
+
+@keyframes SlideInLeft {
+    from{
+        transform: translateX(-300px);
+    }
+
+    to{
+        transform: translateX(0px);
+    }
+
+}
+
+@keyframes SlideInRight {
+    from{
+        transform: translateX(300px);
+    }
+
+    to{
+        transform: translateX(0px);
+    }
+
+}
+
+
+@keyframes SlideInUp{
+    from{
+        transform: translateY(300px);
+    }
+
+    to{
+        transform: translateY(0);
+    }
+}
+
+*{
+    padding: 0  ;
+    margin: 0   ;
+    box-sizing: border-box;
+}
+
+
+
+
+
+
+.hero{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    animation-name: SlideInLeft;
+    animation-duration: 1s;
+    .hero img{
+        width: 46.8rem;
+    }
+    &__left{
+        justify-content: center;
+        align-items: center;
+        font-family: 'REM', sans-serif;
+        padding-left: 4rem;
+    }
+
+
+}
+
+
+
+.top__items{
+    background-color: black;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .top__items__text{
+        text-align: center;
+        padding-top: 2rem;
+    }
+    .top__items__text h3{
+        font-family: 'REM', sans-serif;
+    }
+}
+
+
+
+
+
+
+
+
+
+.top__items__tarjetas{
+    display: flex;
+    padding: 3rem 1rem 3rem 1rem;
+    gap: 1rem;
+    animation-name: SlideInRight;
+    animation-duration: 1s;
+}
+
+.top__items__tarjeta img{
+    width: 100%;
+}
+
+.top__items__tarjeta{
+    text-align: center;
+    
+}
+
+.card{
+    align-items: center;
+    margin: 1.5rem;
+}
+
+.card img{
+    width: 100%;
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+    
+}
+
+
+
+
+
+.footer{
+    height: 100px   ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    
+    
+}
+
+.iconos a{
+    color: grey;
+    margin: 0.5rem;
+    font-size: 1.5rem;
+    
+}
+
+
+.iconos img{
+    width: 100%;
+
+}
+
+
+
+.text--apple{
+    text-align: center;
+    margin: 3rem;
+}
+
+.tarjetas{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+}
+
+
+.grid__contacto{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows:1fr 1fr 1fr ;
+    grid-template-areas: 
+    "caja1 caja2"
+    "caja1 caja2"
+    "caja3 caja3";
+    height: 100vh;
+   
+    .grid__foto{
+        grid-area: caja1;
+        width: 100%;
+        padding: 2rem;
+        background-image: url(../img/foto\ grid\ contacto.jpg);
+        background-size: cover;
+        margin: 2rem;
+    
+    }
+    
+    .grid__form{
+        grid-area: caja2;
+        text-align: center;
+        padding-top: 10rem;
+    }
+    
+    
+    .grid__abajo{
+        grid-area: caja3;
+        justify-content: center;
+        text-align: center;
+        padding-top: 4rem;
+    }
+}
+
+.hero__nosotros{
+    background-image: url(../img/background\ hero.avif);
+   
+    background-repeat: none ;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    img{
+        height: 70vh;
+    }
+    &__text{
+        font-family: 'REM', sans-serif;
+        font-weight: 800;
+        font-size: 2rem;
+    }
+
+}
+.pagina{
+    height: 100vh;
+    
+}
+
+
+@media screen and (max-width: 450px){
+    .tarjetas{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .hero{
+        display:flex;
+        flex-direction: column-reverse;
+        &__left{
+            align-items: flex-end;
+        }
+    }
+
+    .top__items__tarjetas{
+        display: flex;
+        flex-direction: column;
+        
+    }
+}
+
+
