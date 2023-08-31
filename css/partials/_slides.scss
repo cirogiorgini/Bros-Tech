@@ -1,0 +1,31 @@
+%slide-animation {
+    from {
+      transform: translateX(-300px);
+    }
+  
+    to {
+      transform: translateX(0);
+    }
+  }
+  
+  %slide-right-animation {
+    from {
+      transform: translateX(300px);
+    }
+  
+    to {
+      transform: translateX(0);
+    }
+  }
+  
+  %slide-up-animation {
+    from {
+      transform: translateY(300px);
+    }
+  
+    to {
+      transform: translateY(0);
+    }
+  }
+  
+ 

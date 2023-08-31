@@ -48,7 +48,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    animation-name: SlideInLeft;
+    @extend %slide-animation;
     animation-duration: 1s;
     .hero img{
         width: 46.8rem;
@@ -71,6 +71,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    @extend %slide-animation;
 
     .top__items__text{
         text-align: center;
@@ -79,6 +80,7 @@
     .top__items__text h3{
         font-family: 'REM', sans-serif;
     }
+    
 }
 
 
@@ -218,20 +220,40 @@
 
 
 @media screen and (max-width: 450px){
+    //page ambos productos
     .tarjetas{
         display: flex;
         flex-direction: column;
     }
-
+    //page index
     .hero{
         display:flex;
         flex-direction: column-reverse;
+        overflow: hidden;
+        padding-bottom: 1rem;
         &__left{
             align-items: flex-end;
         }
     }
 
     .top__items__tarjetas{
+        display: flex;
+        flex-direction: column;
+        
+    }
+    //Page Sobre nosotros
+    .hero__nosotros{
+        display: block;
+        overflow: hidden;
+        &__text{
+            padding: 1.5rem;
+            font-family: 'REM', sans-serif;
+            font-weight: 800;
+            font-size: 1rem;
+        }
+    }
+    //page contacto
+    .grid__contacto{
         display: flex;
         flex-direction: column;
         
