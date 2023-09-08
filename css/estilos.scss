@@ -39,16 +39,11 @@
     box-sizing: border-box;
 }
 
-
-
-
-
-
 .hero{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    @extend %slide-animation;
+    
     animation-duration: 1s;
     .hero img{
         width: 46.8rem;
@@ -63,15 +58,13 @@
 
 }
 
-
-
 .top__items{
     background-color: black;
     color: white;
     display: flex;
     flex-direction: column;
     align-items: center;
-    @extend %slide-animation;
+    
 
     .top__items__text{
         text-align: center;
@@ -82,14 +75,6 @@
     }
     
 }
-
-
-
-
-
-
-
-
 
 .top__items__tarjetas{
     display: flex;
@@ -130,6 +115,7 @@
     justify-content: center;
     align-items: center;
     background-color: black;
+    
     
     
 }
@@ -198,7 +184,7 @@
 
 .hero__nosotros{
     background-image: url(../img/background\ hero.avif);
-   
+    height: 90vh;
     background-repeat: none ;
     display: flex;
     justify-content: space-between;
@@ -218,6 +204,101 @@
     
 }
 
+.main-productos{
+    height: 78vh;
+}
+
+@media screen and (max-width: 600px){
+    //page ambos productos
+    .tarjetas{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    .main-productos{
+        height: auto;
+    }
+    //page index
+    .hero{
+        display:flex;
+        flex-direction: column-reverse;
+        overflow: hidden;
+        padding-bottom: 1rem;
+        &__left{
+            align-items: flex-end;
+        }
+    }
+
+    .top__items__tarjetas{
+        display: flex;
+        flex-direction: column;
+        
+    }
+    //Page Sobre nosotros
+    .hero__nosotros{
+        display: block;
+        overflow: hidden;
+        &__text{
+            padding: 1.5rem;
+            font-family: 'REM', sans-serif;
+            font-weight: 800;
+            font-size: 1rem;
+        }
+    }
+    //page contacto
+    .grid__contacto{
+        display: flex;
+        flex-direction: column;
+        overflow: hidden;
+        
+    }
+
+}
+
+@media screen and (max-width: 900px){
+    //page ambos productos
+    .tarjetas{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    .main-productos{
+        height: auto;
+    }
+    //page index
+    .hero{
+        display:flex;
+        flex-direction: column-reverse;
+        overflow: hidden;
+        padding-bottom: 1rem;
+        &__left{
+            align-items: flex-end;
+        }
+    }
+
+    .top__items__tarjetas{
+        display: flex;
+        flex-direction: row;
+        
+    }
+    //Page Sobre nosotros
+    .hero__nosotros{
+        display: block;
+        overflow: hidden;
+        &__text{
+            padding: 1.5rem;
+            font-family: 'REM', sans-serif;
+            font-weight: 800;
+            font-size: 1rem;
+        }
+    }
+    //page contacto
+    .grid__contacto{
+        display: flex;
+        flex-direction: column;
+        overflow: hidden;
+        
+    }
+
+}
 
 @media screen and (max-width: 450px){
     //page ambos productos
@@ -259,5 +340,7 @@
         
     }
 }
+
+
 
 
